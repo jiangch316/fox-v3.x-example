@@ -1,0 +1,190 @@
+/* eslint-disable */
+
+/*窗口class*/
+.fox-views {}
+
+/*views window*/
+.fox-views-window {
+    display: block;
+}
+
+/*隐藏view*/
+.fox-view-hide {
+    display: none;
+}
+
+/*窗口class*/
+.fox-views-window>.fox-view {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.fox-view-trans-enter-from {}
+
+.fox-view-trans-enter-active {}
+
+.fox-view-trans-enter-to {
+    animation: fox-view-in-slide-right 330ms;
+    -webkit-animation: fox-view-in-slide-right 330ms;
+    z-index: 120;
+}
+
+.fox-view-trans-leave-from {}
+
+.fox-view-trans-leave-active {}
+
+.fox-view-trans-leave-to {
+    animation: fox-view-out-slide-right 320ms;
+    -webkit-animation: fox-view-out-slide-right 320ms;
+    z-index: 120;
+}
+
+.fox-view-trans-show-from {}
+
+.fox-view-trans-show-active {}
+
+.fox-view-trans-show-to {
+    animation: fox-view-show-slide-right 300ms;
+    -webkit-animation: fox-view-show-slide-right 300ms;
+    z-index: 110;
+}
+
+.fox-view-trans-hide-from {}
+
+.fox-view-trans-hide-active {}
+
+.fox-view-trans-hide-to {
+    animation: fox-view-hide-slide-left 320ms;
+    -webkit-animation: fox-view-hide-slide-left 320ms;
+    z-index: 110;
+}
+
+/* 进场动画 */
+@-webkit-keyframes fox-view-in-slide-right {
+    0% {
+        -webkit-transform: translateX(103%);
+        transform: translateX(103%)
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+@keyframes fox-view-in-slide-right {
+    0% {
+        -webkit-transform: translateX(103%);
+        transform: translateX(103%)
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+/* 出场动画 */
+@-webkit-keyframes fox-view-out-slide-right {
+    0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+
+    100% {
+        -webkit-transform: translateX(103%);
+        transform: translateX(103%)
+    }
+}
+
+@keyframes fox-view-out-slide-right {
+    0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+
+    100% {
+        -webkit-transform: translateX(103%);
+        transform: translateX(103%)
+    }
+}
+
+/* 隐藏动画 */
+@-webkit-keyframes fox-view-hide-slide-left {
+    0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+
+    100% {
+        -webkit-transform: translateX(-30%);
+        transform: translateX(-30%)
+    }
+}
+
+@keyframes fox-view-hide-slide-left {
+    0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+
+    100% {
+        -webkit-transform: translateX(-30%);
+        transform: translateX(-30%)
+    }
+}
+
+/* 显示动画 */
+@-webkit-keyframes fox-view-show-slide-right {
+    0% {
+        -webkit-transform: translateX(-30%);
+        transform: translateX(-30%)
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+@keyframes fox-view-show-slide-right {
+    0% {
+        -webkit-transform: translateX(-30%);
+        transform: translateX(-30%)
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+/*卡片容器class*/
+.fox-card-views {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/*卡片页class*/
+.fox-card-views .fox-card-view {
+    width: 100%;
+    height: 100%;
+}
+
+/*卡片页激活class*/
+.fox-card-views .fox-card-view-active {
+    z-index: 1;
+}
+
+/*卡片页失活class*/
+.fox-card-views .fox-card-view-deactive {
+    display: none;
+    z-index: 0;
+}
