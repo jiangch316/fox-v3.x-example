@@ -8,29 +8,29 @@
 
 ## 介绍
 
-router for vue3.x和开发工具
+router for vue3.x 和开发工具
 
 ## 安装依赖
-```
+
+```js
 npm install
 ```
 
 ## 运行例子
 
-```
+```js
 npm run dev
 ```
 
 ## 例子目录
 
-* link导航 src/example/link-navigate-to/index.vue
-* 编程导航(to）src/example/program-navigate/index.vue
-* 编程导航(open) src/example/program-navigate-open/index.vue
-* 编程导航(open) src/example/program-navigate-append/index.vue
-* 编程导航(整体替换) src/example/program-navigate-all/index.vue
-* 编程导航(局部替换) src/example/program-navigate-part/index.vue
-* 参数传递 src/example/params-pass/index.vue
-* 参数传递(options) src/example/params-pass-options/index.vue
-* 导航守护 src/example/guard/index.vue
-* 数据存储(Bus) src/example/bus/index.vue
-
+- link 导航 sites/example/pages/link-navigate-to/index.vue
+- 编程导航(to）sites/example/pages/program-navigate/index.vue
+- 编程导航(open) sites/example/pages/program-navigate-open/index.vue
+- 编程导航(open) sites/example/pages/program-navigate-append/index.vue
+- 编程导航(整体替换) sites/example/pages/program-navigate-all/index.vue
+- 编程导航(局部替换) sites/example/pages/program-navigate-part/index.vue
+- 参数传递 sites/example/pages/params-pass/index.vue
+- 参数传递(options) sites/example/pages/params-pass-options/index.vue
+- 导航守护 sites/example/pages/guard/index.vue
+- 数据存储(Bus) sites/example/pages/bus/index.vue
