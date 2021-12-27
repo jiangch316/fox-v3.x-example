@@ -1,7 +1,10 @@
 {
   "name": "fox-example",
   "version": "1.0.0",
-  "description": "[fox, router, vue3]",
+  "description": "fox router example",
+  "keywords": [
+    "fox","router","vue3"
+  ],
   "license": "",
   "repository": "https://github.com/jiangch316",
   "scripts": {
