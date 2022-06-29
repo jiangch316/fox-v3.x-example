@@ -4,32 +4,32 @@
  * @Date: 2021-06-06 17:59:28
 -->
 <template>
-    <div>主面版</div>
-    <div>
-        <input type="text" />
-    </div>
-    <div>
-        <fox-router-view :multi="false"></fox-router-view>
-    </div>
+  <div>主面版</div>
+  <div>
+    <input type="text" />
+  </div>
+  <div>
+    <fox-router-view :multi="false"></fox-router-view>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted } from 'vue'
 import { onFoxActivated, onFoxDeactivated } from '@fox-js/fox'
 
 export default defineComponent({
-    setup() {
-        onMounted(() => {
-            console.info(`>>>>> on mounted(panel)`)
-        })
-        onUnmounted(() => {
-            console.info(`----- on unmounted(panel)`)
-        })
-        onFoxActivated(() => {
-            console.info(`>>>>> on active(panel)`)
-        })
-        onFoxDeactivated(() => {
-            console.info(`----- on deactive(panel)`)
-        })
-    }
+  setup() {
+    onMounted(() => {
+      console.info(`>>>>> on mounted(panel)`)
+    })
+    onUnmounted(() => {
+      console.info(`----- on unmounted(panel)`)
+    })
+    onFoxActivated(() => {
+      console.info(`>>>>> on active(panel)`)
+    })
+    onFoxDeactivated(() => {
+      console.info(`----- on deactive(panel)`)
+    })
+  }
 })
 </script>
